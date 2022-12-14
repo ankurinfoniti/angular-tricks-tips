@@ -8,12 +8,7 @@ import jsPDF from 'jspdf';
   styleUrls: ['./html-to-pdf.component.css'],
 })
 export class HtmlToPdfComponent {
-  showButton = true;
-
   handleExport() {
-    // hide print button
-    this.showButton = false;
-
     const invoiceContentElement = document.getElementById(
       'invoice_container'
     ) as HTMLElement;
@@ -35,8 +30,6 @@ export class HtmlToPdfComponent {
       pdf.addImage(imgData, 'PNG', 0, 0, pageWidth, height);
 
       pdf.save('invoice.pdf');
-
-      this.showButton = true;
     });
   }
 }

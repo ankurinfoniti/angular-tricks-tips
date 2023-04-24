@@ -19,6 +19,10 @@ export class AppComponent implements OnInit {
         key: 'HTTP Caching',
         value: '/http-caching',
       },
+      {
+        key: 'Image Slider',
+        value: '/image-slider',
+      },
     ];
   }
 }

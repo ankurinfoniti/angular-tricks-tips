@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { HtmlToPdfComponent } from './html-to-pdf/html-to-pdf.component';
 import { CountryStateComponent } from './caching/country-state/country-state.component';
 import { CacheInterceptor } from './caching/core/cache.interceptor';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 @NgModule({
-  declarations: [AppComponent, HtmlToPdfComponent, CountryStateComponent],
+  declarations: [AppComponent, HtmlToPdfComponent, CountryStateComponent, ImageSliderComponent],
   imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule],
   providers: [
     {

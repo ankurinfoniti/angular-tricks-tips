@@ -23,6 +23,10 @@ export class AppComponent implements OnInit {
         key: 'Image Slider',
         value: '/image-slider',
       },
+      {
+        key: 'Kanban Fire',
+        value: '/kanban-fire',
+      },
     ];
   }
 }

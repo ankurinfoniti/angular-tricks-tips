@@ -9,10 +9,11 @@ import { HtmlToPdfComponent } from './html-to-pdf/html-to-pdf.component';
 import { CountryStateComponent } from './caching/country-state/country-state.component';
 import { CacheInterceptor } from './caching/core/cache.interceptor';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, HtmlToPdfComponent, CountryStateComponent, ImageSliderComponent],
-  imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

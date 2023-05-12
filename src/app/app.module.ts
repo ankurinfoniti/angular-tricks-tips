@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { TaskDetailComponent } from './task-detail/task-detail.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    DragDropModule,
   ],
   providers: [
     {

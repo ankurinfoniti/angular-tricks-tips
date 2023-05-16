@@ -17,9 +17,9 @@ import { HtmlToPdfComponent } from './html-to-pdf/html-to-pdf.component';
 import { CountryStateComponent } from './caching/country-state/country-state.component';
 import { CacheInterceptor } from './caching/core/cache.interceptor';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
-import { TaskComponent } from './task/task.component';
-import { TaskDetailComponent } from './task-detail/task-detail.component';
-import { TaskDialogComponent } from './task-dialog/task-dialog.component';
+import { TaskComponent } from './kanban/task/task.component';
+import { TaskDetailComponent } from './kanban/task-detail/task-detail.component';
+import { TaskDialogComponent } from './kanban/task-dialog/task-dialog.component';
 
 @NgModule({
   declarations: [

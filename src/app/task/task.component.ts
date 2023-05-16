@@ -45,7 +45,30 @@ export class TaskComponent {
       });
   }
 
-  editTask(list: string, task: Task): void {}
+  editTask(list: string, task: Task): void {
+    const dialogRef = this.dialog.open(TaskDialogComponent, {
+      width: '270px',
+      data: {
+        task,
+        enableDelete: true,
+      },
+    });
+    dialogRef
+      .afterClosed()
+      .subscribe((result: TaskDialogResult | undefined) => {
+        if (!result) {
+          return;
+        }
+
+        const dataList = this[list as keyof TaskComponent] as Task[];
+        const taskIndex = dataList.indexOf(task);
+        if (result.delete) {
+          dataList.splice(taskIndex, 1);
+        } else {
+          dataList[taskIndex] = task;
+        }
+      });
+  }
 
   drop(event: CdkDragDrop<Task[]>): void {
     if (event.previousContainer === event.container) {

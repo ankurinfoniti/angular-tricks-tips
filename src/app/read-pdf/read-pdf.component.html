@@ -1,0 +1,32 @@
+<div class="page-content container" id="invoice_container">
+  <div class="page-header text-blue-d2">
+    <h1 class="page-title text-secondary-d1">Read Uploaded PDF File</h1>
+  </div>
+
+  <div class="container px-0">
+    <div class="row mt-4">
+      <div class="col-12 col-lg-12">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center text-150">
+              <input
+                (change)="extractText($event)"
+                class="form-control"
+                type="file"
+                id="formFile"
+                accept="application/pdf"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
+
+        <hr class="row brc-default-l1 mx-n1 mb-4" />
+
+        <div class="row">
+          <div class="col-sm-12" id="output"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

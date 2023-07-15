@@ -20,6 +20,7 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TaskComponent } from './kanban/task/task.component';
 import { TaskDetailComponent } from './kanban/task-detail/task-detail.component';
 import { TaskDialogComponent } from './kanban/task-dialog/task-dialog.component';
+import { ReadPdfComponent } from './read-pdf/read-pdf.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TaskDialogComponent } from './kanban/task-dialog/task-dialog.component'
     TaskComponent,
     TaskDetailComponent,
     TaskDialogComponent,
+    ReadPdfComponent,
   ],
   imports: [
     BrowserModule,

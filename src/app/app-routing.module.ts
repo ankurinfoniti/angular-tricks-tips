@@ -4,6 +4,7 @@ import { CountryStateComponent } from './caching/country-state/country-state.com
 import { HtmlToPdfComponent } from './html-to-pdf/html-to-pdf.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TaskComponent } from './kanban/task/task.component';
+import { ReadPdfComponent } from './read-pdf/read-pdf.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'kanban-fire',
     component: TaskComponent,
+  },
+  {
+    path: 'read-pdf',
+    component: ReadPdfComponent,
   },
 ];
 

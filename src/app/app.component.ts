@@ -27,6 +27,10 @@ export class AppComponent implements OnInit {
         key: 'Kanban Fire',
         value: '/kanban-fire',
       },
+      {
+        key: 'Read PDF',
+        value: '/read-pdf',
+      },
     ];
   }
 }

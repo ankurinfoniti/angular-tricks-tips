@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import * as pdfjsLib from 'pdfjs-dist';
+import * as pdfjsLib from 'pdfjs-dist';
 
 @Component({
   selector: 'app-read-pdf',
@@ -11,15 +11,15 @@ export class ReadPdfComponent {
 
   extractText(e: any) {
     if (e.target) {
-      /* let fReader = new FileReader();
+      let fReader = new FileReader();
       fReader.readAsDataURL(e.target.files[0]);
       fReader.onloadend = (event) => {
         this.convertDataURIToBinary(event.target!.result);
-      }; */
+      };
     }
   }
 
-  /* convertDataURIToBinary(dataURI: any) {
+  convertDataURIToBinary(dataURI: any) {
     let base64Index =
       dataURI.indexOf(this.BASE64_MARKER) + this.BASE64_MARKER.length;
     let base64 = dataURI.substring(base64Index);
@@ -98,5 +98,5 @@ export class ReadPdfComponent {
         console.error(reason);
       }
     );
-  } */
+  }
 }
